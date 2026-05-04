@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic & Circuits | Electrónica Creativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d4a373; /* Terracota suave */
+            --secondary: #faedcd; /* Crema */
+            --accent: #ccd5ae; /* Verde musgo pálido */
+            --dark: #463f3a; /* Gris cálido oscuro */
+            --white: #fefae0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white);
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: var(--secondary);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--dark);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            height: 300px;
+            background: var(--accent);
+            border-radius: 50% 50% 0 0; /* Forma orgánica */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: white;
+        }
+
+        .grid-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: transform 0.3s;
+            border: 1px solid #f1f1f1;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--secondary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 80px;
+            background-color: var(--dark);
+            color: var(--white);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chic & Circuits</h1>
+    <p class="subtitle">Donde la ingeniería se encuentra con la creatividad</p>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Tutoriales</a>
+        <a href="#">Laboratorio</a>
+        <a href="#">Comunidad</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>Diseñando el futuro, un cable a la vez</h2>
+            <p>Bienvenida a un espacio dedicado a la electrónica desde una perspectiva diferente. Aquí creemos que un circuito bien diseñado es tan hermoso como una obra de arte.</p>
+            <a href="#" class="btn">Explorar Proyectos</a>
+        </div>
+        <div class="hero-image">
+            ⚡
+        </div>
+    </section>
+
+    <div class="grid-categories">
+        <div class="card">
+            <span class="badge">FUNDAMENTOS</span>
+            <h3>El Corazón del Proyecto</h3>
+            <p>Aprende la delicadeza detrás de la Ley de Ohm. Entender el flujo de energía es el primer paso para dar vida a tus ideas.</p>
+        </div>
+
+        <div class="card">
+            <span class="badge">MAKER</span>
+            <h3>Proyectos con Alma</h3>
+            <p>Desde cómo conectar tu primer Arduino hasta crear un sistema de riego automático para tu jardín botánico personal.</p>
+        </div>
+
+        <div class="card">
+            <span class="badge">ESTÉTICA</span>
+            <h3>Hardware Funcional</h3>
+            <p>Guías para que tus prototipos no solo funcionen perfectamente, sino que se vean organizados, limpios y profesionales.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Hecho con ♡ para mentes curiosas</p>
+    <p style="font-size: 0.8rem; opacity: 0.6;">© 2026 - Universidad de Sonora </p>
+</footer>
+
+</body>
+</html>
